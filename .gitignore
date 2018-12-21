@@ -1,6 +1,7 @@
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
+/target/
 
 ### STS ###
 .apt_generated
@@ -25,7 +26,3 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-
-/logs
-spring-shell.log
-automated-boot-setup.log
