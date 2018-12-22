@@ -2,11 +2,17 @@ package ch.bbw;
 
 import static junit.framework.TestCase.assertEquals;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class CalculatorTest {
 
   Calculator calculator;
+
+  @Before
+  void setUp() {
+    calculator = new Calculator();
+  }
 
   @Test
   void givenTwoPositiveNumbersItShouldCalculateThemSum() {
