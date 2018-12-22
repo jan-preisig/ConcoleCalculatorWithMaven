@@ -15,6 +15,18 @@ public class CalculatorTest {
   }
 
   @Test
+  public void testSummeZweiNegative() {
+    calculator = new Calculator();
+    assertEquals(-6, calculator.summe(-2, -4));
+  }
+
+  @Test
+  public void testSummeZweiNull() {
+    calculator = new Calculator();
+    assertEquals(0, calculator.summe(0, 0));
+  }
+
+  @Test
   public void testSubtraktionZweiPositiveIsOk() {
     calculator = new Calculator();
     assertEquals(5, calculator.subtraktion(15, 10));
